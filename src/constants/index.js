@@ -3,20 +3,20 @@ import {
     // backend,
     // creator,
     // web,
-    // javascript,
+    javascript,
     typescript,
     html,
     css,
     reactjs,
     //redux,
     tailwind,
-    //nodejs,
+    nodejs,
     //mongodb,
     git,
-    //figma,
+    figma,
     //docker,
     
-    ///threejs,
+    threejs,
     swift,
     java,
     cpp,
@@ -24,6 +24,9 @@ import {
     python,
     r,
     creatML,
+    pytorch,
+    tensorflow,
+    numpy,
     rivian,
     tutor,
     artvision,
@@ -33,6 +36,9 @@ import {
     maze,
     imageproc,
     apple,
+    logo,
+    ubcLogo,
+    wics,
   } from "../assets";
   
   
@@ -44,6 +50,10 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "research",
+      title: "Research",
     },
     {
       id: "project",
@@ -104,10 +114,6 @@ import {
       icon: html,
     },
     {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
       name: "TypeScript",
       icon: typescript,
     },
@@ -116,12 +122,16 @@ import {
       icon: reactjs,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "PyTorch",
+      icon: pytorch,
     },
     {
-      name: "git",
-      icon: git,
+      name: "TensorFlow",
+      icon: tensorflow,
+    },
+    {
+      name: "NumPy",
+      icon: numpy,
     },
     {
       name: "CreateML",
@@ -129,33 +139,101 @@ import {
     },
   ];
   
+  const research = [
+    {
+      title: "SONIC (CVPR 2026 Submission)",
+      company_name: "Undergraduate Research Assistant — Computer Vision Lab, Department of Computer Science, UBC",
+      icon: ubcLogo,
+      iconBg: "#FFFFFF",
+      date: "Sept. 2025 - Present",
+      points: [
+        "Co-authored SONIC: Spectral Optimization of Noise for Inpainting with Consistency (CVPR 2026 submission)",
+        "Assisted in developing a training-free inpainting method using Stable Diffusion 3.5 by exploring optimization of the initial seed noise",
+        "Helped implement spectral-domain noise optimization and linearized denoising trajectories under guidance from senior researchers",
+        "Supported large-scale experiments and evaluations on FFHQ, DIV2K, and BrushBench using PyTorch, CUDA, and UBC compute clusters"
+      ],
+    },
+    {
+      title: "Training-free Video Diffusion Inpainting (Honours Thesis)",
+      company_name: "Undergraduate Research Assistant — Computer Vision Lab, Department of Computer Science, UBC",
+      icon: ubcLogo,
+      iconBg: "#FFFFFF",
+      date: "Sept 2025 - Present",
+      points: [
+        "Extending training-free image-based seed noise optimization to video diffusion models (Wan2.1, LTX-lite), enabling temporally consistent video inpainting",
+        "Exploring per-frame masked optimization and temporal noise initialization strategies to reduce flickering and maintain object/scene coherence across video sequences",
+        "Implementing pipeline for video editing and generation tasks using deterministic schedulers with optimized seed initialization"
+      ],
+    },
+  ];
+
   const experiences = [
     {
-      title: "Software Engineer Intern",
+      title: "Undergraduate Teaching Assistant — CPSC 310 Software Engineering",
+      company_name: "University of British Columbia",
+      icon: ubcLogo,
+      iconBg: "#FFFFFF",
+      date: "Sept 2025 - Present",
+      points: [
+        "Led four lab sections and mentored 15+ project teams developing full-stack web applications; guided students as scrum master through live code walkthroughs and problem-solving sessions",
+        "Conducted office hours and lectures supporting students in test-driven development, RESTful API design, and advanced object-oriented/software design patterns"
+      ],
+    },
+    {
+      title: "Software Engineer Intern — Video Apps Team",
+      company_name: "Apple",
+      icon: apple,
+      iconBg: "#FFFFFF",
+      date: "May 2025 - August 2025",
+      points: [
+        "Developed and delivered three new video and audio features enhancing user experience for Final Cut Pro, scheduled to ship in upcoming product releases",
+        "Integrated a reusable framework in collaboration with cross-functional teams, establishing a foundation for adoption across multiple teams within Apple",
+        "Presented feature demos to senior leadership across the Video Apps organization"
+      ],
+    },
+    {
+      title: "Undergraduate Teaching Assistant — CPSC 221 Algorithms and Data Structures",
+      company_name: "University of British Columbia",
+      icon: ubcLogo,
+      iconBg: "#FFFFFF",
+      date: "Jan 2025 - Apr 2025",
+      points: [
+        "Led two lab sections of 20 students each, delivering live code walkthroughs and hands-on problem-solving in C++",
+        "Guided students in understanding data structures, algorithms, and C++ programming",
+        "Held office hours, supporting students with course concepts, programming assignments, and problem sets"
+      ],
+    },
+    {
+      title: "Mentor",
+      company_name: "UBC Women in Computer Science (WiCS)",
+      icon: wics,
+      iconBg: "#FFFFFF",
+      date: "Sept 2024 - Apr 2025",
+      points: [
+        "Mentored eight junior undergraduates in CS on academic pathways, technical skills, and career development"
+      ],
+    },
+    {
+      title: "Software Engineer Intern — Video Apps Team",
       company_name: "Apple",
       icon: apple,
       iconBg: "#FFFFFF",
       date: "May 2024 - August 2024",
       points: [
-        "I'm going to be interning at Apple as a Software Engineer Intern on the Video Apps Engineering team in Cupertino, CA."
-        // "Collaborated with a cross-functional team to design and develop Rivian's mobile applications, contributing to the creation of cutting-edge software solutions.",
-        // "Implemented sample and demo applications, showcasing the capabilities of Rivian's technology and enhancing the overall user experience.",
-        // "Ensured the quality and performance of applications through rigorous testing, troubleshooting, and resolving identified issues to meet specifications.",
-        // "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built and introduced a new video content creation tool leveraging AVFoundation, Vision and Apple internal frameworks",
+        "Designed and developed a new video editing feature for Final Cut Pro on iPad using Swift/SwiftUI and Objective-C",
+        "Presented the feature demo to leadership and the broader organization, and delivered comprehensive technical documentation to support the implementation"
       ],
     },
     {
-      title: "Software Engineer Intern - iOS Developer",
-      company_name: "Rivian",
+      title: "Software Engineer Intern, iOS Developer — Mobile Apps Team",
+      company_name: "Rivian Automotive",
       icon: rivian,
       iconBg: "#383E56",
       date: "Sept 2023 - April 2024",
       points: [
-        "Worked on Rivian’s mobile app, driving the implementation of new features and seamless vehicle integration",
-        "Gained knowledge of iOS development, architecture, and best practices",
-        "Improved product quality through code reviews, writing effective unit tests and collaborating with QA on implementing automation testing with Appium",
-        "Gained strong proficiency in the Combine framework",
-        "Actively engaged in all Agile/Scrum processes, encompassing sprint planning, daily scrums and sprint reviews"
+        "Developed and shipped new features for Rivian's mobile app, using Swift/SwiftUI and the Combine framework and enabled seamless vehicle integration",
+        "Worked with the QA team to implement automation testing with Appium, and made improvements to the production code through code reviews and unit testing"
       ],
     },
     {
@@ -165,10 +243,7 @@ import {
       iconBg: "#E6DEDD",
       date: "Sept 2022 - Aug 2023",
       points: [
-        "Tutor for university-level Mathematics courses.",
-        "Developed customized lesson plans to meet the individual needs of each student.",
-        "Experience working with students of various skill levels and abilities.",
-
+        "Tutored Mathematics and Computer Science courses; created individualized learning plans to support diverse student needs and skill levels"
       ],
     },
   ];
@@ -315,4 +390,4 @@ import {
     },
   ];
   
-  export { technologies, experiences, testimonials, projects };
+  export { technologies, experiences, research, testimonials, projects };

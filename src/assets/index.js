@@ -17,6 +17,9 @@ import java from "./tech/java.png";
 import r from "./tech/r.png";
 import swift from "./tech/swift.png";
 import creatML from "./tech/createML.png";
+import pytorch from "./tech/pytorch3.png";
+import tensorflow from "./tech/tensorflow2.png";
+import numpy from "./tech/numpyy.png";
 
 
 import demo from "./demo.mp4";
@@ -24,21 +27,23 @@ import demo from "./demo.mp4";
 import linkedin from "./linkedin.png";
 import email from "./email.png";
 //import docker from "./tech/docker.png";
-//import figma from "./tech/figma.png";
+import figma from "./tech/figma.png";
 
-//import javascript from "./tech/javascript.png";
+import javascript from "./tech/javascript.png";
 //import mongodb from "./tech/mongodb.png";
-//import nodejs from "./tech/nodejs.png";
+import nodejs from "./tech/nodejs.png";
 
 //import redux from "./tech/redux.png";
 
-//import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.svg";
 
 
 
 import apple from "./company/apple.png";
 import rivian from "./company/rivian.png";
 import tutor from "./company/tutor.png";
+import ubcLogo from "./company/ubc-logo.png";
+import wics from "./company/wics.png";
 
 import artvision from "./artvision.png";
 import hervision from "./hervision.png";
@@ -64,6 +69,8 @@ export {
   maze,
   imageproc,
   logo,
+  ubcLogo,
+  wics,
   github,
   menu,
   close,
@@ -74,20 +81,23 @@ export {
    r,
    swift,
    creatML,
+   pytorch,
+   tensorflow,
+   numpy,
    java,
   // docker,
-  // figma,
+   figma,
    git,
    html,
-  // javascript,
+   javascript,
   // mongodb,
-  // nodejs,
+   nodejs,
    reactjs,
   // redux,
    tailwind,
    typescript,
+   threejs,
    knn,
    apple
-  // threejs,
   
 };

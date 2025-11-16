@@ -20,11 +20,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Hi! I'm Shadan Namazifard, a third-year Honours Computer Science student at the University of British Columbia and currently an intern at Apple! 
-        I'm passionate about both development and art, and I love using my skills to bring creative ideas to life. 
-        I'm particularly interested in machine learning, app development, artificial intelligence and mathematics. 
-        Previously, I interned at Rivian as an iOS developer, contributing to the Rivian mobile application and currently 
-        I am working as a Software Engineer Intern at Apple.<br>
+        Hi! I'm Shadan Namazifard, a fourth-year Honours Computer Science student at UBC graduating in May 2026 with a passion for blending engineering, creativity, and AI. My main interests lie in computer vision, especially image and video diffusion models, and building intelligent systems that push how we interact with media.
+        I’ve had the opportunity to intern at Rivian as an iOS developer and twice at Apple on the Video Apps team, shaping real features inside world-class products.
+        My latest project, ArtVision AI, brings together everything I love—vision, creativity, and computational design.<br>
         </br>
         
         Check out my latest project <a href="#demo" style={{ fontWeight: 'bold', color: '#A9EFEE' }}>ArtVision AI</a> which brings this vision to life!

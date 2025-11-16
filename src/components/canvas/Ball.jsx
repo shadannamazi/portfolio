@@ -11,7 +11,10 @@ import {
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+  const [decal] = useTexture([props.imgUrl], (texture) => {
+    texture.flipY = false;
+    texture.needsUpdate = true;
+  });
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
