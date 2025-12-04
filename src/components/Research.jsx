@@ -33,7 +33,20 @@ const ResearchCard = ({ researchItem }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{researchItem.title}</h3>
+        <h3 className='text-white text-[24px] font-bold'>
+          {researchItem.link ? (
+            <a 
+              href={researchItem.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-[#915EFF] transition-colors"
+            >
+              {researchItem.title}
+            </a>
+          ) : (
+            researchItem.title
+          )}
+        </h3>
         <p
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}

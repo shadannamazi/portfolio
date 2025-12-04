@@ -141,16 +141,17 @@ import {
   
   const research = [
     {
-      title: "SONIC (CVPR 2026 Submission)",
+      title: "SONIC",
       company_name: "Undergraduate Research Assistant — Computer Vision Lab, Department of Computer Science, UBC",
       icon: ubcLogo,
       iconBg: "#FFFFFF",
       date: "Sept. 2025 - Present",
+      link: "https://ubc-vision.github.io/sonic/", // Add your SONIC paper/project link here
       points: [
-        "Co-authored SONIC: Spectral Optimization of Noise for Inpainting with Consistency (CVPR 2026 submission)",
-        "Assisted in developing a training-free inpainting method using Stable Diffusion 3.5 by exploring optimization of the initial seed noise",
-        "Helped implement spectral-domain noise optimization and linearized denoising trajectories under guidance from senior researchers",
-        "Supported large-scale experiments and evaluations on FFHQ, DIV2K, and BrushBench using PyTorch, CUDA, and UBC compute clusters"
+        // "Co-authored SONIC: Spectral Optimization of Noise for Inpainting with Consistency (CVPR 2026 submission)",
+        // "Assisted in developing a training-free inpainting method using Stable Diffusion 3.5 by exploring optimization of the initial seed noise",
+        // "Helped implement spectral-domain noise optimization and linearized denoising trajectories under guidance from senior researchers",
+        // "Supported large-scale experiments and evaluations on FFHQ, DIV2K, and BrushBench using PyTorch, CUDA, and UBC compute clusters"
       ],
     },
     {
@@ -160,9 +161,9 @@ import {
       iconBg: "#FFFFFF",
       date: "Sept 2025 - Present",
       points: [
-        "Extending training-free image-based seed noise optimization to video diffusion models (Wan2.1, LTX-lite), enabling temporally consistent video inpainting",
-        "Exploring per-frame masked optimization and temporal noise initialization strategies to reduce flickering and maintain object/scene coherence across video sequences",
-        "Implementing pipeline for video editing and generation tasks using deterministic schedulers with optimized seed initialization"
+        // "Extending training-free image-based seed noise optimization to video diffusion models (Wan2.1, LTX-lite), enabling temporally consistent video inpainting",
+        // "Exploring per-frame masked optimization and temporal noise initialization strategies to reduce flickering and maintain object/scene coherence across video sequences",
+        // "Implementing pipeline for video editing and generation tasks using deterministic schedulers with optimized seed initialization"
       ],
     },
   ];
